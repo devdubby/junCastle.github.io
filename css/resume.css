@@ -1,7 +1,13 @@
+/*!
+ * Start Bootstrap - Resume v5.0.6 (https://startbootstrap.com/template-overviews/resume)
+ * Copyright 2013-2019 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-resume/blob/master/LICENSE)
+ */
+
 body {
-  font-family: 'Open Sans', serif;
+  font-family: 'Muli', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   padding-top: 54px;
-  color: #868e96;
+  color: black;
 }
 
 @media (min-width: 992px) {
@@ -17,7 +23,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Saira Extra Condensed', serif;
+  font-family: 'Saira Extra Condensed', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   font-weight: 700;
   text-transform: uppercase;
   color: #343a40;
@@ -32,36 +38,59 @@ h2 {
   font-size: 3.5rem;
 }
 
+h3 {
+  font-size: 2rem;
+}
+
+p.lead {
+  font-size: 1.15rem;
+  font-weight: 400;
+}
+
 .subheading {
   text-transform: uppercase;
   font-weight: 500;
-  font-family: 'Saira Extra Condensed', serif;
-  font-size: 1.35rem;
+  font-family: 'Saira Extra Condensed', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  font-size: 1.5rem;
 }
 
-.list-social-icons a {
-  color: #495057;
+.social-icons a {
+  display: inline-block;
+  height: 3.5rem;
+  width: 3.5rem;
+  background-color: #495057;
+  color: #fff !important;
+  border-radius: 100%;
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 3.5rem;
+  margin-right: 1rem;
 }
 
-.list-social-icons a:hover {
-  color: #BD5D38;
+.social-icons a:last-child {
+  margin-right: 0;
 }
 
-.list-social-icons a .fa-lg {
-  font-size: 1.75rem;
+.social-icons a:hover {
+  background-color: #90caf9;
 }
 
-.list-icons {
+.dev-icons {
   font-size: 3rem;
 }
 
-.list-icons .list-inline-item i:hover {
-  color: #BD5D38;
+.dev-icons .list-inline-item i:hover {
+  color: #90caf9;
 }
 
 #sideNav .navbar-nav .nav-item .nav-link {
-  font-weight: 600;
+  font-weight: 800;
+  letter-spacing: 0.05rem;
   text-transform: uppercase;
+}
+
+#sideNav .navbar-toggler:focus {
+  outline-color: #d48a6e;
 }
 
 @media (min-width: 992px) {
@@ -70,12 +99,19 @@ h2 {
     position: fixed;
     top: 0;
     left: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
-    width: 17rem;
+    width: 19rem;
     height: 100vh;
   }
   #sideNav .navbar-brand {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin: auto auto 0;
     padding: 0.5rem;
@@ -86,13 +122,22 @@ h2 {
     border: 0.5rem solid rgba(255, 255, 255, 0.2);
   }
   #sideNav .navbar-collapse {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
     align-items: flex-start;
+    -webkit-box-flex: 0;
+    -ms-flex-positive: 0;
     flex-grow: 0;
     width: 100%;
     margin-bottom: auto;
   }
   #sideNav .navbar-collapse .navbar-nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     width: 100%;
   }
@@ -104,10 +149,16 @@ h2 {
   }
 }
 
+.w-100 {
+  width: 60%!important;
+}
+
 section.resume-section {
-  border-bottom: 1px solid #dee2e6;
   padding-top: 5rem !important;
   padding-bottom: 5rem !important;
+  max-width: 75rem;
+  text-align: center;
+  flex-direction: column;
 }
 
 section.resume-section .resume-item .resume-date {
@@ -131,17 +182,60 @@ section.resume-section .resume-item .resume-date {
 }
 
 .bg-primary {
-  background-color: rgb(17, 239, 255) !important;
+  background-color: #90caf9 !important;
 }
 
 .text-primary {
-  color: #BD5D38 !important;
+  color: #90caf9 !important;
+}
+
+.project-item {
+  width: 355px;
+  height: 350px;
+  margin: 15px 10px 0px 10px;
+  border-radius: 5px;
+  box-shadow: 0px 1px 3.5px 0px gray;
+  transition: box-shadow 0.1s ease-in-out;
+  cursor: pointer;
+}
+
+.project-item:hover {
+  box-shadow: 0px 1px 13px 0px gray;
+}
+
+.project-img-content {
+  border-radius: 5px;
+}
+
+.project-skills {
+  padding: 0px;
+}
+
+.skills-item {
+  background-color: #F7F7F7;
+  display: inline-block;
+  border-radius: 6px;
+  margin: 5px 3px;
 }
 
 a {
-  color: #BD5D38;
+  color: black;
 }
 
 a:hover, a:focus, a:active {
-  color: #824027;
+  color: #90caf9;
+  text-decoration: none;
+}
+
+.profile-container {
+  width: 350px;
+  height: 300px;
+  margin-top: 25px;
+  border-radius: 5px;
+  box-shadow: 0px 1px 3.5px 0px gray;
+  transition: box-shadow 0.1s ease-in-out;
+}
+
+.profile-container:hover {
+  box-shadow: 0px 1px 13px 0px gray;
 }
