@@ -649,6 +649,34 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
   margin-top: 15px;
 }
 
-.project-content {
+.project-container {
   text-align: left;
+}
+
+.project-content {
+  padding-left: 20px;
+}
+
+.content-wrapper {
+  width: auto;
+  height: 40px;
+  border-radius: 5px;
+  background-color: #f1f1f1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 7px;
+  padding: 0px 7px;
+}
+
+.project-text {
+  font-size: 14px;
+  font-family: 'Dosis, sans-serif';
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .skill-container {
+    margin: 5px;
+  }
 }
