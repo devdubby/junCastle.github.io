@@ -90,7 +90,7 @@
           </div>
         </div>
         <p class="mt-4">더 자세한 이력서가 필요 하시다면 아래 링크에서 확인하실 수 있습니다.</p>
-        <a href="https://drive.google.com/file/d/1DPMO8GGzq669t7oZNAmBBaXB5RNUz7Kk/view?usp=sharing" target="_blank">
+        <a href="https://drive.google.com/file/d/1ndlVgy52_4w-BW-BLr9ck7JEv--NaVkA/view?usp=sharing" target="_blank">
           <span class="fa-stack fa-4x">
             <i class="fas fa-circle fa-stack-2x text-primary"></i>
             <i class="fas fa-cloud-download-alt fa-stack-1x fa-inverse"></i>
@@ -108,7 +108,7 @@
           <h2 class="section-heading text-uppercase">Project</h2>
         </div>
       </div>
-      <div class="row">
+      <div class="row justify-content-center">
         <div class="col-md-4 col-sm-6 project-item">
           <a class="project-link" data-toggle="modal" href="#projectModal1">
             <div class="project-hover">
@@ -116,11 +116,11 @@
                 <i class="fas fa-plus fa-3x"></i>
               </div>
             </div>
-            <img class="img-fluid" src="img/project/studyhub.JPG" alt="">
+            <img class="img-fluid" src="img/project/junflix.png" alt="">
           </a>
           <div class="project-caption">
-            <h4>스터디 모집 웹 프로젝트</h4>
-            <p class="text-muted">HTML5, CSS3, ReactJS(Context API), Material-UI, NodeJS, ExpressJs, MongoDB, AWS EC2, AWS S3, AWS Route53</p>
+            <h4>Junflix</h4>
+            <p class="text-muted">ReactJS, Redux(Redux-thunk), styled-components, NodeJS(Express), MongoDB</p>
           </div>
         </div>
         <div class="col-md-4 col-sm-6 project-item">
@@ -130,25 +130,11 @@
                 <i class="fas fa-plus fa-3x"></i>
               </div>
             </div>
-            <img class="img-fluid" src="img/project/webchat.JPG" alt="">
+            <img class="img-fluid" src="img/project/studyhub.JPG" alt="">
           </a>
           <div class="project-caption">
-            <h4>웹 채팅 프로젝트</h4>
-            <p class="text-muted">HTML5, CSS3, Javascript, JQuery, Firebase</p>
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-6 project-item">
-          <a class="project-link" data-toggle="modal" href="#projectModal3">
-            <div class="project-hover">
-              <div class="project-hover-content">
-                <i class="fas fa-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/project/ppt_page.jpg" alt="">
-          </a>
-          <div class="project-caption">
-            <h4>콘텐츠 배포 API 프로젝트</h4>
-            <p class="text-muted">NodeJS, ExpressJs, MongoDB</p>
+            <h4>StudyHub</h4>
+            <p class="text-muted">ReactJS(Context API), Material-UI, NodeJS(Express), MongoDB, AWS EC2, AWS S3, AWS Route53</p>
           </div>
         </div>
       </div>
@@ -209,8 +195,133 @@
     </div>
   </footer>
 
-  <!-- modal 1 -->
+  <!-- Modal 1 -->
   <div class="project-modal modal fade" id="projectModal1" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-10 mx-auto">
+              <div class="modal-body">
+                <!-- Project Details Go Here -->
+                <h2 class="text-uppercase">영화, 드라마 리뷰 정보 웹 프로젝트</h2>
+                <ul class="list-inline social-buttons">
+                  <li class="list-inline-item">
+                    <a href="https://github.com/hengmo/junflix" target="_blank">
+                      <i class="fab fa-github"></i>
+                    </a>
+                  </li>
+                </ul>
+                <img class="img-fluid d-block mx-auto" src="img/project/junflix.png" alt="">
+                
+                <div class="project-container">
+                  <h3>프로젝트 목적</h3>
+                  <hr />
+                  <p class="project-content">ReactJS, Redux의 활용과 Jwt Token을 활용한 User 인증 기능 학습을 위해 진행한 개인 프로젝트</p>
+
+                  <h3>프로젝트 설명</h3>
+                  <hr />
+                  <p class="project-content">기본 UI는 노마드코더의 인터넷 강의를 들으면서 클론코딩으로 진행했습니다. 이후 다시 처음부터 혼자 개발하며 Style을 구성했고 단순히 데이터 리스트만을 불러오던 기존 웹에서 Jwt Token을 활용한 User 로그인과 회원가입, 예고편 보기, 리뷰 등록, 좋아요 기능을 추가로 개발했습니다.  </p>
+
+                  <h3>개발 환경</h3>
+                  <hr />
+                  <h4 class="project-content">프론트엔드</h4>
+                  <div class="project-content mb-3 d-flex flex-row flex-wrap">
+                    <div class="content-wrapper">
+                      <img class="mb-0 mr-1 rounded-circle" src="img/skills/react.png" width="33px" height="30px" />
+                      <div class="project-text">React</div>
+                    </div>
+                    <div class="content-wrapper">
+                      <img class="mb-0 mr-1 rounded-circle" src="img/skills/redux.png" width="33px" height="30px" />
+                      <div class="project-text">Redux(Redux-thunk)</div>
+                    </div>
+                    <div class="content-wrapper">
+                      <img class="mb-0 mr-1 rounded-circle" src="img/skills/styled.png" width="33px" height="30px" />
+                      <div class="project-text">Styled-Components</div>
+                    </div>
+                  </div>
+                  
+                  <h4 class="project-content">백엔드</h4>
+                  <div class="project-content mb-3 d-flex flex-row flex-wrap">
+                    <div class="content-wrapper">
+                      <img class="mb-0 mr-1 rounded-circle" src="img/skills/nodejs.png" width="48px" height="30px" />
+                      <div class="project-text">NodeJS</div>
+                    </div>
+                    <div class="content-wrapper">
+                      <img class="mb-0 mr-1 rounded-circle" src="img/skills/express.png" width="60px" height="30px" />
+                      <div class="project-text">ExpressJS</div>
+                    </div>
+                    <div class="content-wrapper">
+                      <img class="mb-0 mr-1 rounded-circle" src="img/skills/mongodb.png" width="70px" height="30px" />
+                      <div class="project-text">MongoDB</div>
+                    </div>
+                  </div>
+
+                  <h3>개발한 기능</h3>
+                  <hr />
+                  <div class="project-content mb-3 d-flex flex-row flex-wrap">
+                    <div class="content-wrapper">
+                      <dev class="project-text">전체 리스트 페이지</dev>
+                    </div>
+                    <div class="content-wrapper">
+                      <dev class="project-text">상세 페이지</dev>
+                    </div>
+                    <div class="content-wrapper">
+                      <dev class="project-text">검색 페이지</dev>
+                    </div>
+                    <div class="content-wrapper">
+                      <dev class="project-text">예고편 보기</dev>
+                    </div>
+                    <div class="content-wrapper">
+                      <dev class="project-text">리뷰 작성, 좋아요 기능</dev>
+                    </div>
+                    <div class="content-wrapper">
+                      <dev class="project-text">영화, 드라마 시리즈 및 관련작품 컴포넌트</dev>
+                    </div>
+                    <div class="content-wrapper">
+                      <dev class="project-text">JWT token을 활용한 User 로그인, 회원가입 기능</dev>
+                    </div>
+                  </div>
+
+                  <h3>프로젝트 결과</h3>
+                  <hr />
+                  <div class="project-content mb-3 d-flex flex-row flex-wrap">
+                    <div class="content-wrapper">
+                      <div class="project-text">Redux를 사용한 전역적 상태관리 능력 향상</div>
+                    </div>
+                    <div class="content-wrapper">
+                      <div class="project-text">Reducer, Action 구조설계 및 모듈화 능력 향상</div>
+                    </div>
+                    <div class="content-wrapper">
+                      <div class="project-text">Styled-Components를 활용한 style 구성 능력 향상</div>
+                    </div>
+                    <div class="content-wrapper">
+                      <div class="project-text">Container, Presenter 패턴 학습</div>
+                    </div>
+                    <div class="content-wrapper">
+                      <div class="project-text">JWT Token을 활용한 User 백엔드 로직 개발 능력 향상</div>
+                    </div>
+                  </div>
+                </div>
+
+                <button class="btn btn-primary" data-dismiss="modal" type="button">
+                  <i class="fas fa-times"></i>
+                  Close Project</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- modal 2 -->
+  <div class="project-modal modal fade" id="projectModal2" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="close-modal" data-dismiss="modal">
@@ -225,7 +336,7 @@
                 <h2 class="text-uppercase">스터디 모집 웹 프로젝트</h2>
                 <ul class="list-inline social-buttons">
                   <li class="list-inline-item">
-                    <a href="https://github.com/hengmo/StudyHub#%EB%A7%A1%EC%9D%80-%EA%B8%B0%EB%8A%A5" target="_blank">
+                    <a href="https://github.com/hengmo/StudyHub" target="_blank">
                       <i class="fab fa-github"></i>
                     </a>
                   </li>
@@ -240,7 +351,7 @@
                 <div class="project-container">
                   <h3>프로젝트 목적</h3>
                   <hr />
-                  <p class="project-content">ReactJS를 활용한 프론트엔드 개발 학습을 위해 진행한 프로젝트</p>
+                  <p class="project-content">ReactJS를 활용한 프론트엔드 개발 학습을 위해 진행한 팀 프로젝트</p>
 
                   <h3>프로젝트 설명</h3>
                   <hr />
@@ -292,7 +403,7 @@
                     </div>
                   </div>
 
-                  <h3>구현 기능</h3>
+                  <h3>맡은 기능</h3>
                   <hr />
                   <div class="project-content mb-3 d-flex flex-row flex-wrap">
                     <div class="content-wrapper">
@@ -368,198 +479,6 @@
                     </div>
                   </div>
                 </div>
-                <button class="btn btn-primary" data-dismiss="modal" type="button">
-                  <i class="fas fa-times"></i>
-                  Close Project</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Modal 2 -->
-  <div class="project-modal modal fade" id="projectModal2" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal">
-          <div class="lr">
-            <div class="rl"></div>
-          </div>
-        </div>
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-10 mx-auto">
-              <div class="modal-body">
-                <!-- Project Details Go Here -->
-                <h2 class="text-uppercase">웹 채팅 프로젝트</h2>
-                <ul class="list-inline social-buttons">
-                  <li class="list-inline-item">
-                    <a href="https://github.com/hengmo/kakao-webchat" target="_blank">
-                      <i class="fab fa-github"></i>
-                    </a>
-                  </li>
-                </ul>
-                <img class="img-fluid d-block mx-auto" src="img/project/webchat.JPG" alt="">
-                
-                <div class="project-container">
-                  <h3>프로젝트 목적</h3>
-                  <hr />
-                  <p class="project-content">웹 개발 직무교육에 참여하여 전반적인 웹 개발 방법 및 Github를 활용한 팀 협업 방식에 대해 배우고자 진행한 팀 프로젝트</p>
-
-                  <h3>프로젝트 설명</h3>
-                  <hr />
-                  <p class="project-content">카카오톡을 참고하여 디자인을 구현한 1:1 혹은 그룹 웹 채팅 프로그램입니다. 회원이 아닐시에 이메일, 비밀번호를 입력하면 자동으로 회원가입이 되고 로그인이 가능하게 구현 했습니다. 닉네임 수정이 가능하며 현재 채팅방에 입장한 인원수를 표시 하였습니다.</p>
-
-                  <h3>개발 환경</h3>
-                  <hr />
-                  <h4 class="project-content">프론트엔드</h4>
-                  <div class="project-content mb-3 d-flex flex-row flex-wrap">
-                    <div class="content-wrapper">
-                      <img class="mb-0 mr-1 rounded-circle" src="img/skills/html.png" width="33px" height="30px" />
-                      <div class="project-text">HTML5</div>
-                    </div>
-                    <div class="content-wrapper">
-                      <img class="mb-0 mr-1 rounded-circle" src="img/skills/css.jpeg" width="33px" height="30px" />
-                      <div class="project-text">CSS3</div>
-                    </div>
-                    <div class="content-wrapper">
-                      <img class="mb-0 mr-1 rounded-circle" src="img/skills/jquery.png" width="33px" height="30px" />
-                      <div class="project-text">JQuery</div>
-                    </div>
-                    <div class="content-wrapper">
-                      <img class="mb-0 mr-1 rounded-circle" src="img/skills/javascript.png" width="33px" height="30px" />
-                      <div class="project-text">Javascript</div>
-                    </div>
-                  </div>
-                  
-                  <h4 class="project-content">백엔드</h4>
-                  <div class="project-content mb-3 d-flex flex-row flex-wrap">
-                    <div class="content-wrapper">
-                      <img class="mb-0 mr-1 rounded-circle" src="img/skills/firebase.png" width="60px" height="30px" />
-                      <div class="project-text">Firebase(Authentication, Realtime Database)</div>
-                    </div>
-                  </div>
-
-                  <h3>맡은 기능</h3>
-                  <hr />
-                  <div class="project-content mb-3 d-flex flex-row flex-wrap">
-                    <div class="content-wrapper">
-                      <dev class="project-text">로그인 기능</dev>
-                    </div>
-                    <div class="content-wrapper">
-                      <dev class="project-text">채팅 기능</dev>
-                    </div>
-                    <div class="content-wrapper">
-                      <dev class="project-text">데이터베이스 로직 개발</dev>
-                    </div>
-                  </div>
-
-                  <h3>프로젝트 결과</h3>
-                  <hr />
-                  <div class="project-content mb-3 d-flex flex-row flex-wrap">
-                    <div class="content-wrapper">
-                      <div class="project-text">HTML, CSS를 활용한 웹 구성 방법 학습 및 구현 능력 향상</div>
-                    </div>
-                    <div class="content-wrapper">
-                      <div class="project-text">Javascript, JQuery를 활용한 로직 처리 능력 향상</div>
-                    </div>
-                    <div class="content-wrapper">
-                      <div class="project-text">branch, push, pull merge, pull request등 Github를 활용한 팀 협업 방식에 대한 학습</div>
-                    </div>
-                    <div class="content-wrapper">
-                      <div class="project-text">Firebase에 대한 이해도 상승 및 API 구현 능력 향상</div>
-                    </div>
-                  </div>
-                </div>
-
-                <button class="btn btn-primary" data-dismiss="modal" type="button">
-                  <i class="fas fa-times"></i>
-                  Close Project</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Modal 3 -->
-  <div class="project-modal modal fade" id="projectModal3" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal">
-          <div class="lr">
-            <div class="rl"></div>
-          </div>
-        </div>
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-10 mx-auto">
-              <div class="modal-body">
-                <h2 class="text-uppercase">콘텐츠 배포 API 프로젝트</h2>
-                <ul class="list-inline social-buttons">
-                  <li class="list-inline-item">
-                    <a href="https://github.com/hengmo/portfolio-study" target="_blank">
-                      <i class="fab fa-github"></i>
-                    </a>
-                  </li>
-                  <li class="list-inline-item">
-                    <a href="https://docs.google.com/presentation/d/1YupwOYbJPB5tRt0m3mucxNoi1BxqhC1HNqxjXCkvsfU/edit?usp=sharing" target="_blank">
-                      <i class="fas fa-link"></i>
-                    </a>
-                  </li>
-                </ul>
-                <img src="img/project/ppt_page.jpg" class="d-block w-100" alt="ppt_page">
-                
-                <div class="project-container">
-                  <h3>프로젝트 목적</h3>
-                  <hr />
-                  <p class="project-content">NodeJs, ExpressJs, MonogoDB를 활용하여 서버 구축 및 API개발 학습을 위해 진행한 개인 프로젝트</p>
-
-                  <h3>프로젝트 설명</h3>
-                  <hr />
-                  <p class="project-content">일일 매거진, 블로그 등 컨텐츠성 데이터들을 영역 별로 배포할 수 있는 API 입니다. 
-                    어드민(관리자)페이지에서 데이터의 생성, id값을 통한 상세조회, 전체조회, 삭제, 이미지 업로드 기능이 가능하도록 구현 하였고 프론트 페이지에서 id값을 통한 상세조회, 카테고리별 조회 기능아 가능하도록 구현 하였습니다.</p>
-
-                  <h3>개발 환경</h3>
-                  <hr />
-                  
-                  <h4 class="project-content">백엔드</h4>
-                  <div class="project-content mb-3 d-flex flex-row flex-wrap">
-                    <div class="content-wrapper">
-                      <img class="mb-0 mr-1 rounded-circle" src="img/skills/nodejs.png" width="48px" height="30px" />
-                      <div class="project-text">NodeJS</div>
-                    </div>
-                    <div class="content-wrapper">
-                      <img class="mb-0 mr-1 rounded-circle" src="img/skills/express.png" width="55px" height="30px" />
-                      <div class="project-text">ExpressJS</div>
-                    </div>
-                    <div class="content-wrapper">
-                      <img class="mb-0 mr-1 rounded-circle" src="img/skills/mongodb.png" width="65px" height="30px" />
-                      <div class="project-text">MongoDB</div>
-                    </div>
-                  </div>
-
-                  <h3>프로젝트 결과</h3>
-                  <hr />
-                  <div class="project-content mb-3 d-flex flex-row flex-wrap">
-                    <div class="content-wrapper">
-                      <div class="project-text">NodeJs, ExpressJS 서버 구축 방법 학습 및 구현 능력 향상</div>
-                    </div>
-                    <div class="content-wrapper">
-                      <div class="project-text">비동기 처리 능력 향상(Promise)</div>
-                    </div>
-                    <div class="content-wrapper">
-                      <div class="project-text">MongoDB를 활용한 데이터 베이스 구축 능력 및 쿼리 처리 능력 향상</div>
-                    </div>
-                    <div class="content-wrapper">
-                      <div class="project-text">코드 모듈화 능력 향상</div>
-                    </div>
-                  </div>
-                </div>
-
                 <button class="btn btn-primary" data-dismiss="modal" type="button">
                   <i class="fas fa-times"></i>
                   Close Project</button>
