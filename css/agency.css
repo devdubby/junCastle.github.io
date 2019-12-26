@@ -680,3 +680,18 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
     margin: 5px;
   }
 }
+
+.skills-title {
+  padding: 25px;
+}
+
+.main-skills {
+  padding: 35px;
+  width: 44%;
+}
+
+.experienced-skills {
+  padding: 35px;
+  width: 46%;
+}
+

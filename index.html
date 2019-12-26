@@ -46,6 +46,9 @@
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="https://drive.google.com/file/d/1tSurmX_d0QzqZLi0lUxIfJNKzx7z2cX6/view?usp=sharing" target="_blank">Resume</a>
+          </li>
         </ul>
       </div>
     </div>
@@ -89,13 +92,26 @@
             <p>인천광역시 부평구 거주</p>
           </div>
         </div>
-        <p class="mt-4">더 자세한 이력서가 필요 하시다면 아래 링크에서 확인하실 수 있습니다.</p>
-        <a href="https://drive.google.com/file/d/1gjfKOybP4XpdfIaMKgkcr9SSzpK8f1CU/view?usp=sharing" target="_blank">
-          <span class="fa-stack fa-4x">
-            <i class="fas fa-circle fa-stack-2x text-primary"></i>
-            <i class="fas fa-cloud-download-alt fa-stack-1x fa-inverse"></i>
-          </span>
-        </a>
+        <div class="skills-container">
+          <div class="skills-content d-flex justify-content-center">
+            <div class="main-skills">
+              <h5 class="skills-title">Main skills</h5>
+              <img class="m-1 mr-1" src="img/skills/html.png" width="80px" height="80px" />
+              <img class="m-1 mr-1" src="img/skills/css.jpeg" width="80px" height="80px" />
+              <img class="m-1 mr-1" src="img/skills/javascript.png" width="80x" height=80px" />
+              <img class="m-1 mr-1" src="img/skills/react.png" width="80px" height="80px" />
+            </div>
+            <div class="experienced-skills">
+              <h5 class="skills-title">Experienced skills</h5>
+              <img class="m-1 mr-1" src="img/skills/redux.png" width="85px" height="80px" />
+              <img class="m-1 mr-1" src="img/skills/nodejs.png" width="100px" height="80px" />
+              <img class="m-1 mr-1" src="img/skills/express.png" width="110px" height="70px" />
+              <img class="m-1 mr-1" src="img/skills/mongodb.png" width="120px" height="70px" />
+              <img class="m-1 mr-1" src="img/skills/aws.png" width="117px" height="80px" />
+              <img class="m-1 mr-1" src="img/skills/firebase.png" width="130px" height="90px" />
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -240,7 +256,7 @@
 
                   <h3>프로젝트 설명</h3>
                   <hr />
-                  <p class="project-content">사용하고 있던 공용 영화 API에서 국문으로 된 영화 리뷰 데이터들을 얻을 수 없었습니다. 이를 해결하고 웹의 기능 확장성을 고려하여 Jwt Token을 활용한 User 인증 로직을 개발했고, 영화 리뷰 정보들을 볼 수 있도록 리뷰, 좋아요 기능의 CRUD API를 개발했습니다. 기본 UI는 노마드코더의 인터넷 강의를 들으면서 클론코딩으로 진행했고, 이후 다시 처음부터 개발하며 Style을 설계했습니다.</p>
+                  <p class="project-content">사용하고 있던 공용 영화 API에서 국문으로 된 영화 리뷰 데이터들을 얻을 수 없었습니다. 이를 해결하고 웹의 기능 확장성을 고려하여 Jwt Token을 활용한 User 인증 로직을 개발했고, 영화 리뷰 정보들을 볼 수 있도록 리뷰, 좋아요 기능의 CRUD API를 개발했습니다. 기본 UI는 노마드코더의 인터넷 강의를 들으면서 클론코딩으로 진행했고, 이후 다시 처음부터 개발하며 Style을 설계했습니다. 자유도가 높은 Mobx보다는 상태관리의 교과서적인 이론을 습득하기위해 Redux를 이용했습니다. </p>
 
                   <h3>개발 환경</h3>
                   <hr />
@@ -443,7 +459,7 @@
 
                   <h3>프로젝트 설명</h3>
                   <hr />
-                  <p class="project-content">스터디를 찾거나 모집할 수 있는 웹 페이지 입니다. 스터디 모집 관련 플랫폼이나 커뮤니티들은 많았지만 대부분 딱딱한 화면 디자인과 스터디의 위치 정보를 한눈에 보기 어렵다는 문제점이 있었습니다. 저희는 이를 개선하고자 ReactJS 기반의 UI framework를 활용하여 더욱 깔끔하고 이용자 친화적인 화면을 구성하려 했습니다. Naver Map API를 활용하여 이용자의 위치 기반으로 스터디를 찾거나 모집할 수 있도록 하려 했습니다. 또한, multer모듈을 활용해 스터디의 커버 이미지를 올릴 수 있도록 하여 스터디의 신빙성을 확보하고 Socket.io를 활용해 쪽지를 주고받을 수 있도록 하여 이용자들간의 교류가 가능하도록 했습니다.</p>
+                  <p class="project-content">스터디를 찾거나 모집할 수 있는 웹 페이지 입니다. 스터디 모집 관련 플랫폼이나 커뮤니티들은 많았지만 대부분 딱딱한 화면 디자인과 스터디의 위치 정보를 한눈에 보기 어렵다는 문제점이 있었습니다. 저희는 이를 개선하고자 React 기반의 UI framework를 활용하여 더욱 깔끔하고 이용자 친화적인 화면을 구성하려 했습니다. Naver Map API를 활용하여 이용자의 위치 기반으로 스터디를 찾거나 모집할 수 있도록 하려 했습니다. 또한, multer모듈을 활용해 스터디의 커버 이미지를 올릴 수 있도록 하여 스터디의 신빙성을 확보하고 Socket.io를 활용해 쪽지를 주고받을 수 있도록 하여 이용자들간의 교류가 가능하도록 했습니다. 스터디 정보는 한번 올려놓으면 특별한 작업이 많이 필요하지 않기때문에 상태관리 라이브러리를 이용하지 않고 Context API를 이용했습니다. </p>
 
                   <h3>개발 환경</h3>
                   <hr />
@@ -590,7 +606,7 @@
   <script src="js/contact_me.js"></script>
 
   <!-- Custom scripts for this template -->
-  <script src="js/agency.min.js"></script>
+  <script src="js/agency.js"></script>
 
 </body>
 
