@@ -100,6 +100,7 @@
               <img class="m-1 mr-1" src="img/skills/css.jpeg" width="80px" height="80px" />
               <img class="m-1 mr-1" src="img/skills/javascript.png" width="80x" height=80px" />
               <img class="m-1 mr-1" src="img/skills/react.png" width="80px" height="80px" />
+              <img class="m-1 mr-1" src="img/skills/react-native.png" width="100px" height="90px" />
             </div>
             <div class="experienced-skills">
               <h5 class="skills-title">Experienced skills</h5>
@@ -149,7 +150,7 @@
             <img class="img-fluid" src="img/project/ringle.png" alt="ringle-image">
           </a>
           <div class="project-caption">
-            <h4>Ringle</h4>인턴십
+            <h4>Ringle</h4>인턴쉽
             <p>(2019.08.12 ~ 2019.11.11)</p>
           </div>
         </div>
@@ -258,6 +259,10 @@
                   <hr />
                   <p class="project-content">사용하고 있던 공용 영화 API에서 국문으로 된 영화 리뷰 데이터들을 얻을 수 없었습니다. 이를 해결하고 웹의 기능 확장성을 고려하여 Jwt Token을 활용한 User 인증 로직을 개발했고, 영화 리뷰 정보들을 볼 수 있도록 리뷰, 좋아요 기능의 CRUD API를 개발했습니다. 기본 UI는 노마드코더의 인터넷 강의를 들으면서 클론코딩으로 진행했고, 이후 다시 처음부터 개발하며 Style을 설계했습니다. 자유도가 높은 Mobx보다는 상태관리의 교과서적인 이론을 습득하기 위해 Redux를 이용했습니다. </p>
 
+                  <h3>기능흐름도</h3>
+                  <hr />
+                  <img src="./img/project/junflix-functional-diagram.png" width="100%" alt="junflix-diagram" />
+
                   <h3>개발 환경</h3>
                   <hr />
                   <h4 class="project-content">프론트엔드</h4>
@@ -363,55 +368,80 @@
           <div class="row">
             <div class="col-lg-10 mx-auto">
               <div class="modal-body">
-                <h2 class="text-uppercase">Ringle 인턴십</h2>
-                <img class="img-fluid d-block mx-auto" src="img/project/ringleTV.png" alt="">
-
+                <h2 class="text-uppercase">Ringle 인턴쉽</h2>
                 <div class="project-container">
-                  <h3>프로젝트 목적</h3>
+                  <h3>역할</h3>
                   <hr />
-                  <p class="project-content">'링글 잉글리시 에듀케이션' 인턴쉽 때 저조한 모바일 웹 서비스 사용량을 개선시키기 위해 개발한 프로젝트</p>
-
-                  <h3>프로젝트 설명</h3>
-                  <hr />
-                  <p class="project-content">튜터들의 영상 콘텐츠를 볼 수 있고 댓글, 대댓글, 좋아요 기능을 이용할 수 있는 모바일 앱의 화면을 개발했습니다. 기존에 개발되어 있었던 Firebase Analytics 로직을 통해 이용자들의 앱 사용량을 측정할 수 있었습니다. 확인 결과 한번 앱을 켜면 10분도 채 사용하지 않는다는 사실을 발견할 수 있었습니다. 이를 개선하고 조금이나마 이용자들이 앱에 머무를 수 있게 하려고 튜터들의 소개 영상, 영어공부 방법, 그 외에 다양한 콘텐츠들을 소비할 수 있는 위 페이지를 개발하게 되었습니다.
-                  </p>
+                  <p class="project-content"><a href="https://play.google.com/store/apps/details?id=com.ringle" target="_blank">링글 잉글리시 에듀케이션</a>에서 인턴으로써 모바일 클라이언트 개발 업무 담당(2019.08.12 ~ 2019.11.11)</p>
 
                   <h3>개발 환경</h3>
                   <hr />
                   <div class="project-content mb-3 d-flex flex-row flex-wrap">
                     <div class="content-wrapper">
-                      <img class="mb-0 mr-1 rounded-circle" src="img/skills/react.png" width="33px" height="30px" />
-                      <div class="project-text">React-Native(Redux)</div>
+                      <img class="mb-0 mr-1 rounded-circle" src="img/skills/react-native.png" width="33px" height="30px" />
+                      <div class="project-text">React-Native</div>
+                    </div>
+                    <div class="content-wrapper">
+                      <img class="mb-0 mr-1 rounded-circle" src="img/skills/redux.png" width="33px" height="30px" />
+                      <div class="project-text">Redux</div>
+                    </div>
+                    <div class="content-wrapper">
+                      <div class="project-text">StyleSheet</div>
+                    </div>
+                    <div class="content-wrapper">
+                      <div class="project-text">Detox(E2E Testing Framework)</div>
                     </div>
                   </div>
 
-                  <h3>맡은 기능</h3>
+                  <h3>개발한 프로젝트</h3>
                   <hr />
-                  <div class="project-content mb-3 d-flex flex-row flex-wrap">
-                    <div class="content-wrapper">
-                      <dev class="project-text">동영상 뷰 컴포넌트 개발</dev>
-                    </div>
-                    <div class="content-wrapper">
-                      <dev class="project-text">댓글, 대댓글, 좋아요 기능 개발</dev>
-                    </div>
-                  </div>
+                  <ol>
+                    <li><h5>Ringle TV 개발</h5></li>
+                    <ul>
+                      <li>화면</li>
+                      <img class="img-fluid d-block mx-auto" width="80%" src="img/project/ringleTV.png" alt="">
+                      <li>주요기능</li>
+                      <div class="project-content mb-3 d-flex flex-row flex-wrap">
+                        <div class="content-wrapper">
+                          <dev class="project-text">비디오 뷰 컴포넌트</dev>
+                        </div>
+                        <div class="content-wrapper">
+                          <dev class="project-text">빨리감기, 되감기, 전체화면, 슬라이더 기능</dev>
+                        </div>
+                        <div class="content-wrapper">
+                          <dev class="project-text">댓글, 대댓글 작성 기능</dev>
+                        </div>
+                        <div class="content-wrapper">
+                          <dev class="project-text">좋아요 기능</dev>
+                        </div>
+                      </div>
+                      <li>개발하게 된 계기</li>
+                      <p>튜터들의 영상 콘텐츠를 볼 수 있고 댓글, 대댓글, 좋아요 기능을 이용할 수 있는 모바일 앱의 화면을 개발했습니다. 기존에 개발되어 있었던 Firebase Analytics 로직을 통해 이용자들의 앱 사용량을 측정할 수 있었습니다. 확인 결과 한번 앱을 켜면 10분도 채 사용하지 않는다는 사실을 발견할 수 있었습니다. 이를 개선하고 조금이나마 이용자들이 앱에 머무를 수 있게 하려고 튜터들의 소개 영상, 영어공부 방법, 그 외에 다양한 콘텐츠들을 소비할 수 있는 위 페이지를 개발하게 되었습니다.
+                      </p>
+                      <li>프로젝트 결과</li>
+                      <div class="project-content mb-3 d-flex flex-row flex-wrap">
+                        <div class="content-wrapper">
+                          <div class="project-text">React 로직 설계 능력 향상</div>
+                        </div>
+                        <div class="content-wrapper">
+                          <div class="project-text">ios, android 플랫폼 예외처리 능력 향상</div>
+                        </div>
+                        <div class="content-wrapper">
+                          <div class="project-text">모바일 앱 사용량 증가</div>
+                        </div>
+                        <div class="content-wrapper">
+                          <div class="project-text">Redux를 활용한 전역적 상태관리 능력 향상</div>
+                        </div>
+                      </div>
+                    </ul>
 
-                  <h3>프로젝트 결과</h3>
-                  <hr />
-                  <div class="project-content mb-3 d-flex flex-row flex-wrap">
-                    <div class="content-wrapper">
-                      <div class="project-text">React 로직 설계 능력 향상</div>
-                    </div>
-                    <div class="content-wrapper">
-                      <div class="project-text">Redux를 활용한 전역적 상태관리 능력 향상</div>
-                    </div>
-                    <div class="content-wrapper">
-                      <div class="project-text">ios, android 플랫폼 예외처리 능력 향상</div>
-                    </div>
-                    <div class="content-wrapper">
-                      <div class="project-text">모바일 앱 사용량 증가</div>
-                    </div>
-                  </div>
+                    <li><h5>QA Testing 자동화 개발</h5></li>
+                    <p>신규 기능을 개발하면서 수동적인 QA 테스팅으로 인해 발생하는 비용소모를 개선하고자 <a href="https://github.com/wix/Detox" target="_blank">Detox</a>를 활용한 React-Native 앱 End-to-End 테스팅 자동화 개발
+                    </p>
+
+                    <li><h5>JWT Token 인증 요청 방식 개발</h5></li>
+                    <p>기존에 url parameter로 전달하는 token 인증 방식을 JWT Token 인증 방식으로 개발하여 보안성 향상</p>
+                  </ol>
                 </div>
                 <button class="btn btn-primary" data-dismiss="modal" type="button">
                   <i class="fas fa-times"></i>
@@ -460,6 +490,10 @@
                   <h3>프로젝트 설명</h3>
                   <hr />
                   <p class="project-content">스터디를 찾거나 모집할 수 있는 웹 페이지 입니다. 스터디 모집 관련 플랫폼이나 커뮤니티들은 많았지만 대부분 딱딱한 화면 디자인과 스터디의 위치 정보를 한눈에 보기 어렵다는 문제점이 있었습니다. 저희는 이를 개선하고자 React 기반의 UI framework를 활용하여 더욱 깔끔하고 이용자 친화적인 화면을 구성하려 했습니다. Naver Map API를 활용하여 이용자의 위치 기반으로 스터디를 찾거나 모집할 수 있도록 하려 했습니다. 또한, multer모듈을 활용해 스터디의 커버 이미지를 올릴 수 있도록 하여 스터디의 신빙성을 확보하고 Socket.io를 활용해 쪽지를 주고받을 수 있도록 하여 이용자들간의 교류가 가능하도록 했습니다. 스터디 정보는 한번 올려놓으면 특별한 작업이 많이 필요하지 않기때문에 상태관리 라이브러리를 이용하지 않고 Context API를 이용했습니다. </p>
+
+                  <h3>기능흐름도</h3>
+                  <hr />
+                  <img src="./img/project/studyhub-functional-diagram.png" width="100%" height="400px" alt="studyhub-diagram" />
 
                   <h3>개발 환경</h3>
                   <hr />
