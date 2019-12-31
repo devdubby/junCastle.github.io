@@ -446,13 +446,18 @@
 
                       <li class="font-weight-bold">어려웠던 점</li>
                       <ol>
-                        <li class="difficult-list mt-2">Slider 라이브러리 기능 문제
-                          <p>사용하고 있던 Slider 라이브러리는 영상의 진행 정도만 알려줄 뿐 터치 시에 영상의 해당 시간으로 넘어갈 수 없다는 문제가 있었습니다. 이를 해결하기 위해 터치된 부분의 x값을 구해 장치의 너비로 나누고 영상의 duration과 onPress 이벤트를 적절히 이용해 해결할 수 있었습니다.</p>
-                        </li>
-                        <li>전체화면시 인터페이스가 깨지는 문제
-                          <p>Android 환경에서 전체화면 버튼을 누르면 작동하지 않고 인터페이스가 깨지는 문제가 있었습니다. 고민하다 기존에 있던 튜터 소개 영상을 전체화면으로 볼 수 있도록 하는 VideoPlayers 컴포넌트가 떠올랐습니다. 이를 활용해 이용자가 전체화면 버튼을 누르면 VideoPlayers 컴포넌트에 영상 URL 주소와 videoCurrentTime 을 props로 전달하고 Action으로 만든 setVideoTime 함수를 이용해 전체화면으로 영상을 이어볼 수 있도록 했습니다. 또한, 전체화면을 취소할 시에도 이전 컴포넌트에서 componentWillReceiveProps 라이프 사이클과 seek 메소드, store 에 저장한 videoTime 을 적절히 이용해 영상을 보는 데 문제가 없도록 했습니다.
-                          </p>
-                        </li>
+                        <li class="difficult-list mt-2 font-weight-bold">Slider 라이브러리 기능 문제</li>
+                        사용하고 있던 Slider 라이브러리는 영상의 진행 정도만 알려줄 뿐 터치 시에 영상의 해당 시간으로 넘어갈 수 없는 문제 발견<br />
+                        <ul class="difficult-list-content mb-3">
+                          <li>터치된 부분의 x값을 구해 장치의 너비로 나누고 영상의 duration과 onPress 이벤트를 적절히 이용해 해결</li>
+                        </ul>
+                        <li class="font-weight-bold">전체화면시 인터페이스가 깨지는 문제</li>
+                        Android 환경에서 전체화면 버튼을 누르면 작동하지 않고 인터페이스가 깨지는 문제 발견<br />
+                        <ul class="difficult-list-content mb-3">
+                          <li>기존에 개발되어 있던 튜터 소개 영상을 전체화면으로 볼 수 있도록 하는 VideoPlayers 컴포넌트 활용</li>
+                          <li>이용자가 전체화면 버튼을 누르면 VideoPlayers 컴포넌트에 영상 URL 주소와 videoCurrentTime 을 props로 전달하고 Action으로 만든 setVideoTime 함수를 이용해 전체화면으로 영상을 이어볼 수 있도록 함</li>
+                          <li>전체화면을 취소할 시에도 이전 컴포넌트에서 componentWillReceiveProps 라이프 사이클과 seek 메소드, store 에 저장한 videoTime 을 적절히 이용해 영상을 보는 데 문제가 없도록 함</li>
+                        </ul>
                       </ol>
 
                       <li class="font-weight-bold">프로젝트 결과</li>
@@ -474,9 +479,19 @@
 
                     <li>
                       <h5>각종 이슈 해결 및 로직 개선</h5>
-                      <p>
-                        <a href="https://sentry.io/welcome/" target="_blank">Sentry.io</a>를 활용해 이슈 분석 및 기존의 앱 로직 개선
-                      </p>
+                        <a class="link-content mb-5" href="https://sentry.io/welcome/" target="_blank">Sentry.io</a>를 활용해 이슈 분석 및 기존의 앱 로직 개선
+                      <ol>
+                        <li class="solution-list-content font-weight-bold mt-2">Youtube 영상 시청 멈춤 현상 해결</li>
+                        극히 일부 사용자에게 Youtube 영상 시청 시 특정 시간이 지나면 앱이 터지는 현상 발견<br />
+                        <ul class="solution-list-content mb-3">
+                          <li>원인을 알아내지 못했지만 사용하고 있던 react-native-youtube 라이브러리와의 문제라고 판단하고 iframe 을 이용해 동영상을 볼 수 있도록 로직 변경</li>
+                        </ul>
+                        <li class="font-weight-bold">나의 튜터 추가 시 무한 로딩 현상 해결</li>
+                        일부 사용자에게 즐겨찾는 튜터 추가 시 FlatList 에 추가되며 scrollToIndex 가 작동하는데 이때, Flatlist 와 scrollToIndex 사용 시 성능 최적화를 위해 getItemLayout 를 이용해야 함
+                        <ul class="solution-list-content mb-3">
+                          <li>getItemLayout 을 이용해 flatlist의 length와 offset을 지정하여 문제 해결</li>
+                        </ul>
+                      </ol>
                     </li>
                     
                     <li><h5>QA Testing 자동화 개발</h5></li>
