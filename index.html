@@ -421,9 +421,10 @@
                   <ol>
                     <li><h5>Ringle TV 개발</h5></li>
                     <ul>
-                      <li>화면</li>
+                      <li class="font-weight-bold">화면</li>
                       <img class="img-fluid d-block mx-auto" width="80%" src="img/project/ringleTV.png" alt="">
-                      <li>주요기능</li>
+
+                      <li class="font-weight-bold">주요기능</li>
                       <div class="project-content mb-3 d-flex flex-row flex-wrap">
                         <div class="content-wrapper">
                           <dev class="project-text">비디오 뷰 컴포넌트</dev>
@@ -438,10 +439,23 @@
                           <dev class="project-text">좋아요 기능</dev>
                         </div>
                       </div>
-                      <li>개발하게 된 계기</li>
-                      <p>튜터들의 영상 콘텐츠를 볼 수 있고 댓글, 대댓글, 좋아요 기능을 이용할 수 있는 모바일 앱의 화면을 개발했습니다. 기존에 개발되어 있었던 Firebase Analytics 로직을 통해 이용자들의 앱 사용량을 측정할 수 있었습니다. 확인 결과 한번 앱을 켜면 10분도 채 사용하지 않는다는 사실을 발견할 수 있었습니다. 이를 개선하고 조금이나마 이용자들이 앱에 머무를 수 있게 하려고 튜터들의 소개 영상, 영어공부 방법, 그 외에 다양한 콘텐츠들을 소비할 수 있는 위 페이지를 개발하게 되었습니다.
+
+                      <li class="font-weight-bold">개발하게 된 계기</li>
+                      <p>튜터들의 영상 콘텐츠를 볼 수 있고 댓글, 대 댓글, 좋아요 기능을 이용할 수 있는 모바일 앱의 화면을 개발했습니다. 기존에 개발되어 있었던 Firebase Analytics 로직을 통해 이용자들의 앱 사용량을 측정할 수 있었습니다. 확인 결과 한번 앱을 켜면 10분도 채 사용하지 않는다는 사실을 발견할 수 있었습니다. 이를 개선하고 조금이나마 이용자들이 앱에 머무를 수 있게 하기 위해 튜터들의 영어공부 방법 소개 영상을 볼 수 있고 댓글을 통해 튜터와 소통할 수 있는 위 컴포넌트를 개발하게 되었습니다.
                       </p>
-                      <li>프로젝트 결과</li>
+
+                      <li class="font-weight-bold">어려웠던 점</li>
+                      <ol>
+                        <li class="difficult-list mt-2">Slider 라이브러리 기능 문제
+                          <p>사용하고 있던 Slider 라이브러리는 영상의 진행 정도만 알려줄 뿐 터치 시에 영상의 해당 시간으로 넘어갈 수 없다는 문제가 있었습니다. 이를 해결하기 위해 터치된 부분의 x값을 구해 장치의 너비로 나누고 영상의 duration과 onPress 이벤트를 적절히 이용해 해결할 수 있었습니다.</p>
+                        </li>
+                        <li>전체화면시 인터페이스가 깨지는 문제
+                          <p>Android 환경에서 전체화면 버튼을 누르면 작동하지 않고 인터페이스가 깨지는 문제가 있었습니다. 고민하다 기존에 있던 튜터 소개 영상을 전체화면으로 볼 수 있도록 하는 VideoPlayers 컴포넌트가 떠올랐습니다. 이를 활용해 이용자가 전체화면 버튼을 누르면 VideoPlayers 컴포넌트에 영상 URL 주소와 videoCurrentTime 을 props로 전달하고 Action으로 만든 setVideoTime 함수를 이용해 전체화면으로 영상을 이어볼 수 있도록 했습니다. 또한, 전체화면을 취소할 시에도 이전 컴포넌트에서 componentWillReceiveProps 라이프 사이클과 seek 메소드, store 에 저장한 videoTime 을 적절히 이용해 영상을 보는 데 문제가 없도록 했습니다.
+                          </p>
+                        </li>
+                      </ol>
+
+                      <li class="font-weight-bold">프로젝트 결과</li>
                       <div class="project-content mb-3 d-flex flex-row flex-wrap">
                         <div class="content-wrapper">
                           <div class="project-text">React 로직 설계 능력 향상</div>
@@ -458,6 +472,13 @@
                       </div>
                     </ul>
 
+                    <li>
+                      <h5>각종 이슈 해결 및 로직 개선</h5>
+                      <p>
+                        <a href="https://sentry.io/welcome/" target="_blank">Sentry.io</a>를 활용해 이슈 분석 및 기존의 앱 로직 개선
+                      </p>
+                    </li>
+                    
                     <li><h5>QA Testing 자동화 개발</h5></li>
                     <p>신규 기능을 개발하면서 수동적인 QA 테스팅으로 인해 발생하는 비용소모를 개선하고자 <a href="https://github.com/wix/Detox" target="_blank">Detox</a>를 활용한 React-Native 앱 End-to-End 테스팅 자동화 개발
                     </p>
@@ -465,13 +486,6 @@
                     <li><h5>JWT Token 인증 요청 방식 개발</h5></li>
                     <p>기존에 url parameter로 전달하는 token 인증 방식을 JWT Token 인증 방식으로 개발하여 보안성 향상</p>
                     
-                    <li>
-                      <h5>각종 이슈 해결 및 로직 개선</h5>
-                      <p>
-                        <a href="https://sentry.io/welcome/" target="_blank">Sentry.io</a>를 활용해 이슈 분석 및 기존의 앱 로직 개선
-                      </p>
-                    </li>
-
                   </ol>
                 </div>
                 <button class="btn btn-primary" data-dismiss="modal" type="button">
